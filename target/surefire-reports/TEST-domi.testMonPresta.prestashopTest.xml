@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="domi.testMonPresta.prestashopTest" time="33.284" tests="16" errors="15" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/dominiquemereaux/eclipse-workspace/testMonPresta/target/test-classes:/Users/dominiquemereaux/eclipse-workspace/testMonPresta/target/classes:/Users/dominiquemereaux/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.2/webdrivermanager-5.3.2.jar:/Users/dominiquemereaux/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/Users/dominiquemereaux/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/dominiquemereaux/.m2/repository/com/github/docker-java/docker-java/3.2.14/docker-java-3.2.14.jar:/Users/dominiquemereaux/.m2/repository/com/github/docker-java/docker-java-core/3.2.14/docker-java-core-3.2.14.jar:/Users/dominiquemereaux/.m2/repository/com/github/docker-java/docker-java-api/3.2.14/docker-java-api-3.2.14.jar:/Users/dominiquemereaux/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/dominiquemereaux/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/dominiquemereaux/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/dominiquemereaux/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/dominiquemereaux/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/dominiquemereaux/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/dominiquemereaux/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/dominiquemereaux/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.14/docker-java-transport-httpclient5-3.2.14.jar:/Users/dominiquemereaux/.m2/repository/com/github/docker-java/docker-java-transport/3.2.14/docker-java-transport-3.2.14.jar:/Users/dominiquemereaux/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/dominiquemereaux/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/dominiquemereaux/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/Users/dominiquemereaux/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/dominiquemereaux/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/dominiquemereaux/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/dominiquemereaux/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/dominiquemereaux/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/Users/dominiquemereaux/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.jar:/Users/dominiquemereaux/.m2/repository/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.jar:/Users/dominiquemereaux/.m2/repository/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.jar:/Users/dominiquemereaux/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.jar:/Users/dominiquemereaux/.m2/repository/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.jar:/Users/dominiquemereaux/.m2/repository/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.jar:/Users/dominiquemereaux/.m2/repository/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.jar:/Users/dominiquemereaux/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/Users/dominiquemereaux/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.jar:/Users/dominiquemereaux/.m2/repository/org/ow2/asm/asm/6.1.1/asm-6.1.1.jar:/Users/dominiquemereaux/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-java/3.5.1/selenium-java-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-api/3.5.1/selenium-api-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.5.1/selenium-chrome-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.5.1/selenium-edge-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.5.1/selenium-firefox-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.5.1/selenium-ie-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.5.1/selenium-opera-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.5.1/selenium-remote-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.5.1/selenium-safari-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-support/3.5.1/selenium-support-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4.jar:/Users/dominiquemereaux/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/dominiquemereaux/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/dominiquemereaux/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/Users/dominiquemereaux/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dominiquemereaux/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/dominiquemereaux/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.23/cssparser-0.9.23.jar:/Users/dominiquemereaux/.m2/repository/com/google/guava/guava/23.0/guava-23.0.jar:/Users/dominiquemereaux/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/dominiquemereaux/.m2/repository/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar:/Users/dominiquemereaux/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/dominiquemereaux/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/dominiquemereaux/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/dominiquemereaux/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.27/htmlunit-2.27.jar:/Users/dominiquemereaux/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.27/htmlunit-core-js-2.27.jar:/Users/dominiquemereaux/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.27/neko-htmlunit-2.27.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/jetty-client/9.4.5.v20170502/jetty-client-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/jetty-http/9.4.5.v20170502/jetty-http-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/jetty-io/9.4.5.v20170502/jetty-io-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/jetty-util/9.4.5.v20170502/jetty-util-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/dominiquemereaux/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/dominiquemereaux/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/dominiquemereaux/.m2/repository/com/codeborne/phantomjsdriver/1.4.0/phantomjsdriver-1.4.0.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.27/htmlunit-driver-2.27.jar:/Users/dominiquemereaux/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.5.v20170502/websocket-api-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.5.v20170502/websocket-client-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.5.v20170502/websocket-common-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/dominiquemereaux/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/dominiquemereaux/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/dominiquemereaux/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/dominiquemereaux/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="FR"/>
+    <property name="sun.boot.library.path" value="/Users/dominiquemereaux/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_17.0.4.v20221004-1257/jre/lib"/>
+    <property name="sun.java.command" value="/Users/dominiquemereaux/eclipse-workspace/testMonPresta/target/surefire/surefirebooter6055761436114351420.jar /Users/dominiquemereaux/eclipse-workspace/testMonPresta/target/surefire 2023-05-08T22-39-57_623-jvmRun1 surefire6759089902632012588tmp surefire_0700786264715644551tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/dominiquemereaux/eclipse-workspace/testMonPresta/target/test-classes:/Users/dominiquemereaux/eclipse-workspace/testMonPresta/target/classes:/Users/dominiquemereaux/.m2/repository/io/github/bonigarcia/webdrivermanager/5.3.2/webdrivermanager-5.3.2.jar:/Users/dominiquemereaux/.m2/repository/org/slf4j/slf4j-api/2.0.6/slf4j-api-2.0.6.jar:/Users/dominiquemereaux/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/dominiquemereaux/.m2/repository/com/github/docker-java/docker-java/3.2.14/docker-java-3.2.14.jar:/Users/dominiquemereaux/.m2/repository/com/github/docker-java/docker-java-core/3.2.14/docker-java-core-3.2.14.jar:/Users/dominiquemereaux/.m2/repository/com/github/docker-java/docker-java-api/3.2.14/docker-java-api-3.2.14.jar:/Users/dominiquemereaux/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.3/jackson-annotations-2.10.3.jar:/Users/dominiquemereaux/.m2/repository/org/apache/commons/commons-compress/1.21/commons-compress-1.21.jar:/Users/dominiquemereaux/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.3/jackson-databind-2.10.3.jar:/Users/dominiquemereaux/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.3/jackson-core-2.10.3.jar:/Users/dominiquemereaux/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.64/bcpkix-jdk15on-1.64.jar:/Users/dominiquemereaux/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.64/bcprov-jdk15on-1.64.jar:/Users/dominiquemereaux/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.30/jcl-over-slf4j-1.7.30.jar:/Users/dominiquemereaux/.m2/repository/com/github/docker-java/docker-java-transport-httpclient5/3.2.14/docker-java-transport-httpclient5-3.2.14.jar:/Users/dominiquemereaux/.m2/repository/com/github/docker-java/docker-java-transport/3.2.14/docker-java-transport-3.2.14.jar:/Users/dominiquemereaux/.m2/repository/org/brotli/dec/0.1.2/dec-0.1.2.jar:/Users/dominiquemereaux/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/client5/httpclient5/5.2.1/httpclient5-5.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/core5/httpcore5/5.2/httpcore5-5.2.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/core5/httpcore5-h2/5.2/httpcore5-h2-5.2.jar:/Users/dominiquemereaux/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.8.1/junit-jupiter-params-5.8.1.jar:/Users/dominiquemereaux/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.8.1/junit-jupiter-api-5.8.1.jar:/Users/dominiquemereaux/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/dominiquemereaux/.m2/repository/org/junit/platform/junit-platform-commons/1.8.1/junit-platform-commons-1.8.1.jar:/Users/dominiquemereaux/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/dominiquemereaux/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.8.1/junit-jupiter-engine-5.8.1.jar:/Users/dominiquemereaux/.m2/repository/org/junit/platform/junit-platform-engine/1.8.1/junit-platform-engine-1.8.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/plugins/maven-surefire-plugin/2.22.0/maven-surefire-plugin-2.22.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/surefire/maven-surefire-common/2.22.0/maven-surefire-common-2.22.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-plugin-api/2.2.1/maven-plugin-api-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/plugin-tools/maven-plugin-annotations/3.5/maven-plugin-annotations-3.5.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/surefire/surefire-api/2.22.0/surefire-api-2.22.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/surefire/surefire-logger-api/2.22.0/surefire-logger-api-2.22.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/surefire/surefire-booter/2.22.0/surefire-booter-2.22.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-artifact/2.2.1/maven-artifact-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/codehaus/plexus/plexus-utils/1.5.15/plexus-utils-1.5.15.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-plugin-descriptor/2.2.1/maven-plugin-descriptor-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/codehaus/plexus/plexus-container-default/1.0-alpha-9-stable-1/plexus-container-default-1.0-alpha-9-stable-1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-project/2.2.1/maven-project-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-settings/2.2.1/maven-settings-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-profile/2.2.1/maven-profile-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-artifact-manager/2.2.1/maven-artifact-manager-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/backport-util-concurrent/backport-util-concurrent/3.1/backport-util-concurrent-3.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-plugin-registry/2.2.1/maven-plugin-registry-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/codehaus/plexus/plexus-interpolation/1.11/plexus-interpolation-1.11.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-model/2.2.1/maven-model-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-core/2.2.1/maven-core-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-plugin-parameter-documenter/2.2.1/maven-plugin-parameter-documenter-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/wagon/wagon-http/1.0-beta-6/wagon-http-1.0-beta-6.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/wagon/wagon-http-shared/1.0-beta-6/wagon-http-shared-1.0-beta-6.jar:/Users/dominiquemereaux/.m2/repository/nekohtml/xercesMinimal/1.9.6.2/xercesMinimal-1.9.6.2.jar:/Users/dominiquemereaux/.m2/repository/nekohtml/nekohtml/1.9.6.2/nekohtml-1.9.6.2.jar:/Users/dominiquemereaux/.m2/repository/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/wagon/wagon-webdav-jackrabbit/1.0-beta-6/wagon-webdav-jackrabbit-1.0-beta-6.jar:/Users/dominiquemereaux/.m2/repository/org/apache/jackrabbit/jackrabbit-webdav/1.5.0/jackrabbit-webdav-1.5.0.jar:/Users/dominiquemereaux/.m2/repository/org/apache/jackrabbit/jackrabbit-jcr-commons/1.5.0/jackrabbit-jcr-commons-1.5.0.jar:/Users/dominiquemereaux/.m2/repository/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.jar:/Users/dominiquemereaux/.m2/repository/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/reporting/maven-reporting-api/2.2.1/maven-reporting-api-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/doxia/doxia-logging-api/1.1/doxia-logging-api-1.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/wagon/wagon-provider-api/1.0-beta-6/wagon-provider-api-1.0-beta-6.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-repository-metadata/2.2.1/maven-repository-metadata-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-error-diagnostics/2.2.1/maven-error-diagnostics-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-monitor/2.2.1/maven-monitor-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/classworlds/classworlds/1.1/classworlds-1.1.jar:/Users/dominiquemereaux/.m2/repository/org/sonatype/plexus/plexus-sec-dispatcher/1.3/plexus-sec-dispatcher-1.3.jar:/Users/dominiquemereaux/.m2/repository/org/sonatype/plexus/plexus-cipher/1.4/plexus-cipher-1.4.jar:/Users/dominiquemereaux/.m2/repository/org/apache/maven/maven-toolchain/2.2.1/maven-toolchain-2.2.1.jar:/Users/dominiquemereaux/.m2/repository/org/codehaus/plexus/plexus-java/0.9.8/plexus-java-0.9.8.jar:/Users/dominiquemereaux/.m2/repository/org/ow2/asm/asm/6.1.1/asm-6.1.1.jar:/Users/dominiquemereaux/.m2/repository/com/thoughtworks/qdox/qdox/2.0-M7/qdox-2.0-M7.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-java/3.5.1/selenium-java-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-api/3.5.1/selenium-api-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.5.1/selenium-chrome-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.5.1/selenium-edge-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.5.1/selenium-firefox-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.5.1/selenium-ie-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.5.1/selenium-opera-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.5.1/selenium-remote-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.5.1/selenium-safari-driver-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/selenium-support/3.5.1/selenium-support-3.5.1.jar:/Users/dominiquemereaux/.m2/repository/cglib/cglib-nodep/3.2.4/cglib-nodep-3.2.4.jar:/Users/dominiquemereaux/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/dominiquemereaux/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/Users/dominiquemereaux/.m2/repository/commons-io/commons-io/2.5/commons-io-2.5.jar:/Users/dominiquemereaux/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/dominiquemereaux/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/Users/dominiquemereaux/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.23/cssparser-0.9.23.jar:/Users/dominiquemereaux/.m2/repository/com/google/guava/guava/23.0/guava-23.0.jar:/Users/dominiquemereaux/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/dominiquemereaux/.m2/repository/com/google/errorprone/error_prone_annotations/2.0.18/error_prone_annotations-2.0.18.jar:/Users/dominiquemereaux/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/dominiquemereaux/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/dominiquemereaux/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/dominiquemereaux/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.27/htmlunit-2.27.jar:/Users/dominiquemereaux/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.27/htmlunit-core-js-2.27.jar:/Users/dominiquemereaux/.m2/repository/net/sourceforge/htmlunit/neko-htmlunit/2.27/neko-htmlunit-2.27.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/dominiquemereaux/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/jetty-client/9.4.5.v20170502/jetty-client-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/jetty-http/9.4.5.v20170502/jetty-http-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/jetty-io/9.4.5.v20170502/jetty-io-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/jetty-util/9.4.5.v20170502/jetty-util-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar:/Users/dominiquemereaux/.m2/repository/net/java/dev/jna/jna-platform/4.1.0/jna-platform-4.1.0.jar:/Users/dominiquemereaux/.m2/repository/junit/junit/4.12/junit-4.12.jar:/Users/dominiquemereaux/.m2/repository/com/codeborne/phantomjsdriver/1.4.0/phantomjsdriver-1.4.0.jar:/Users/dominiquemereaux/.m2/repository/org/seleniumhq/selenium/htmlunit-driver/2.27/htmlunit-driver-2.27.jar:/Users/dominiquemereaux/.m2/repository/javax/servlet/javax.servlet-api/3.1.0/javax.servlet-api-3.1.0.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/websocket/websocket-api/9.4.5.v20170502/websocket-api-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/websocket/websocket-client/9.4.5.v20170502/websocket-client-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/org/eclipse/jetty/websocket/websocket-common/9.4.5.v20170502/websocket-common-9.4.5.v20170502.jar:/Users/dominiquemereaux/.m2/repository/xalan/serializer/2.7.2/serializer-2.7.2.jar:/Users/dominiquemereaux/.m2/repository/xalan/xalan/2.7.2/xalan-2.7.2.jar:/Users/dominiquemereaux/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/Users/dominiquemereaux/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/Users/dominiquemereaux/.m2/repository/log4j/log4j/1.2.17/log4j-1.2.17.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/dominiquemereaux"/>
+    <property name="user.language" value="fr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-08-12"/>
+    <property name="java.home" value="/Users/dominiquemereaux/.p2/pool/plugins/org.eclipse.justj.openjdk.hotspot.jre.full.macosx.aarch64_17.0.4.v20221004-1257/jre"/>
+    <property name="file.separator" value="/"/>
+    <property name="style.color" value="always"/>
+    <property name="basedir" value="/Users/dominiquemereaux/eclipse-workspace/testMonPresta"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="/Users/dominiquemereaux/eclipse-workspace/testMonPresta/target/surefire/surefirebooter6055761436114351420.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.4.1+1"/>
+    <property name="user.name" value="dominiquemereaux"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="12.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.4.1+1"/>
+    <property name="localRepository" value="/Users/dominiquemereaux/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/3b/z_3bn4n12j59v3g7l9pm1x8r0000gn/T/"/>
+    <property name="java.version" value="17.0.4.1"/>
+    <property name="user.dir" value="/Users/dominiquemereaux/eclipse-workspace/testMonPresta"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/dominiquemereaux/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.4.1+1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="testPrestashop4" classname="domi.testMonPresta.prestashopTest" time="1.826">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testPrestashop4(prestashopTest.java:390)
+</error>
+    <system-err><![CDATA[SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/dominiquemereaux/.m2/repository/org/slf4j/slf4j-nop/1.5.3/slf4j-nop-1.5.3.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Ignoring binding found at [jar:file:/Users/dominiquemereaux/.m2/repository/org/slf4j/slf4j-jdk14/1.5.6/slf4j-jdk14-1.5.6.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 10265
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:39:59 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testPrestashop5" classname="domi.testMonPresta.prestashopTest" time="2.103">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testPrestashop5(prestashopTest.java:299)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 14971
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testPrestashop6" classname="domi.testMonPresta.prestashopTest" time="3.673">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testPrestashop6(prestashopTest.java:329)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 35963
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testActions" classname="domi.testMonPresta.prestashopTest" time="2.798">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testActions(prestashopTest.java:271)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 41846
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testFenetre" classname="domi.testMonPresta.prestashopTest" time="1.166">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testFenetre(prestashopTest.java:376)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 35375
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testPrestashopAPK" classname="domi.testMonPresta.prestashopTest" time="0.933">
+    <error message="Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.remote.UnreachableBrowserException">org.openqa.selenium.remote.UnreachableBrowserException: 
+Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure.
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testPrestashopAPK(prestashopTest.java:423)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to 127.0.0.1:4723 [/127.0.0.1] failed: Connection refused
+	at domi.testMonPresta.prestashopTest.testPrestashopAPK(prestashopTest.java:423)
+Caused by: java.net.ConnectException: Connection refused
+	at domi.testMonPresta.prestashopTest.testPrestashopAPK(prestashopTest.java:423)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 28889
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:10 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testJavascript" classname="domi.testMonPresta.prestashopTest" time="2.173">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testJavascript(prestashopTest.java:365)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 26387
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:11 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testLaFrame" classname="domi.testMonPresta.prestashopTest" time="2.028">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testLaFrame(prestashopTest.java:185)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 36542
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:13 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+log4j:WARN No appenders could be found for logger (domi.testMonPresta.prestashopTest).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+]]></system-err>
+  </testcase>
+  <testcase name="testPrestashopCopie" classname="domi.testMonPresta.prestashopTest" time="2.626"/>
+  <testcase name="testPrestashopAttente" classname="domi.testMonPresta.prestashopTest" time="2.242">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testPrestashopAttente(prestashopTest.java:312)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 6889
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:18 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testPrestashopAction" classname="domi.testMonPresta.prestashopTest" time="2.084">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testPrestashopAction(prestashopTest.java:403)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 44587
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:20 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="checkerLaBOX" classname="domi.testMonPresta.prestashopTest" time="2.139">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.checkerLaBOX(prestashopTest.java:168)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 49013
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="chercherLeMug2" classname="domi.testMonPresta.prestashopTest" time="2.737">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.chercherLeMug2(prestashopTest.java:135)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 17670
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="chercherLeMugF" classname="domi.testMonPresta.prestashopTest" time="0.789">
+    <error message="Session ID is null. Using WebDriver after calling quit()?&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.NoSuchSessionException">org.openqa.selenium.NoSuchSessionException: 
+Session ID is null. Using WebDriver after calling quit()?
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.chercherLeMugF(prestashopTest.java:119)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 24352
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:27 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="compterLesFenetres" classname="domi.testMonPresta.prestashopTest" time="1.764">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.compterLesFenetres(prestashopTest.java:252)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 2420
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:28 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+  <testcase name="testPrestashopCurrency" classname="domi.testMonPresta.prestashopTest" time="2.191">
+    <error message="Unrecognized platform: mac os x&#10;Build info: version: &apos;3.5.1&apos;, revision: &apos;9c21bb67ef&apos;, time: &apos;2017-08-17T15:26:08.955Z&apos;&#10;System info: host: &apos;Airdedominique&apos;, ip: &apos;fe80:0:0:0:ce3:5aed:d08d:c597%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;12.5&apos;, java.version: &apos;17.0.4.1&apos;&#10;Driver info: driver.version: RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Unrecognized platform: mac os x
+Build info: version: '3.5.1', revision: '9c21bb67ef', time: '2017-08-17T15:26:08.955Z'
+System info: host: 'Airdedominique', ip: 'fe80:0:0:0:ce3:5aed:d08d:c597%en0', os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '12.5', java.version: '17.0.4.1'
+Driver info: driver.version: RemoteWebDriver
+	at domi.testMonPresta.prestashopTest.testPrestashopCurrency(prestashopTest.java:345)
+</error>
+    <system-err><![CDATA[Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 23528
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+mai 08, 2023 10:40:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFOS: Detected dialect: W3C
+]]></system-err>
+  </testcase>
+</testsuite>
