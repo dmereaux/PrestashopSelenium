@@ -76,6 +76,7 @@ public class prestashopTest {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options=new ChromeOptions();
         options.addArguments("--headless");
+        options.addArguments("--whitelisted-ips=\"\"");
         options.addArguments("window-size=1920,1200");
         driver=new ChromeDriver(options);
 //        driver.get("https://opensource-demo.orangehrmlive.com/");
