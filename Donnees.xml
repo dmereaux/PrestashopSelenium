@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<liste>
+    <jeux mot ="MUG" message ="There are 5 products.">jeux1</jeux>
+    <jeux mot ="mug" message ="There are 5 products.">jeux2</jeux>
+    <jeux mot ="T-shirt" message ="There is 1 product.">jeux2</jeux>
+</liste>

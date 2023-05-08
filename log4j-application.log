@@ -1,0 +1,36 @@
+2022-04-20 21:27:26 INFO  prestashopTest:118 - Etape 1 : aller sur le site
+2022-04-20 21:27:28 INFO  prestashopTest:121 - Etape 2 : accepter la modale
+2022-04-20 21:27:33 INFO  prestashopTest:124 - Etape 3 : aller sur la frame
+2022-04-20 21:27:33 WARN  prestashopTest:125 - This is warn : 
+2022-04-20 21:28:24 INFO  prestashopTest:118 - Etape 1 : aller sur le site
+2022-04-20 21:28:25 INFO  prestashopTest:121 - Etape 2 : accepter la modale
+2022-04-20 21:28:31 INFO  prestashopTest:124 - Etape 3 : aller sur la frame
+2022-04-20 21:28:31 WARN  prestashopTest:125 - This is warn : 
+2022-04-20 21:31:47 INFO  prestashopTest:115 - Etape 1 : aller sur le site
+2022-04-20 21:31:48 INFO  prestashopTest:118 - Etape 2 : accepter la modale
+2022-04-20 21:31:54 INFO  prestashopTest:121 - Etape 3 : aller sur la frame
+2022-04-20 21:31:54 WARN  prestashopTest:122 - This is warn : 
+2022-04-20 21:34:16 INFO  prestashopTest:115 - Etape 1 : aller sur le site
+2022-04-20 21:34:18 INFO  prestashopTest:118 - Etape 2 : accepter la modale
+2022-04-20 21:34:23 INFO  prestashopTest:121 - Etape 3 : aller sur la frame
+2022-04-20 21:34:23 WARN  prestashopTest:122 - This is warn : 
+2022-11-29 21:44:01 INFO  prestashopTest:132 - Etape 1 : aller sur le site
+2022-11-29 21:44:03 INFO  prestashopTest:135 - Etape 2 : accepter la modale
+2022-11-29 21:44:08 INFO  prestashopTest:138 - Etape 3 : aller sur la frame
+2022-11-29 21:44:08 WARN  prestashopTest:139 - This is warn : 
+2022-11-30 13:29:12 INFO  prestashopTest:132 - Etape 1 : aller sur le site
+2022-11-30 13:29:40 INFO  prestashopTest:135 - Etape 2 : accepter la modale
+2022-11-30 13:29:45 INFO  prestashopTest:138 - Etape 3 : aller sur la frame
+2022-11-30 13:29:45 WARN  prestashopTest:139 - This is warn : 
+2022-12-05 08:47:34 INFO  prestashopTest:164 - Etape 1 : aller sur le site
+2022-12-05 08:47:35 INFO  prestashopTest:167 - Etape 2 : accepter la modale
+2022-12-05 08:47:40 INFO  prestashopTest:170 - Etape 3 : aller sur la frame
+2022-12-05 08:47:40 WARN  prestashopTest:171 - This is warn : 
+2022-12-05 10:38:25 INFO  prestashopTest:168 - Etape 1 : aller sur le site
+2022-12-05 10:38:25 INFO  prestashopTest:171 - Etape 2 : accepter la modale
+2022-12-05 14:41:11 INFO  prestashopTest:168 - Etape 1 : aller sur le site
+2022-12-05 14:41:12 INFO  prestashopTest:171 - Etape 2 : accepter la modale
+2023-05-08 20:40:25 INFO  prestashopTest:171 - Etape 1 : aller sur le site
+2023-05-08 20:40:26 INFO  prestashopTest:174 - Etape 2 : accepter la modale
+2023-05-08 21:40:31 INFO  prestashopTest:180 - Etape 1 : aller sur le site
+2023-05-08 21:40:33 INFO  prestashopTest:183 - Etape 2 : accepter la modale
