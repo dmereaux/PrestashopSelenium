@@ -9,6 +9,8 @@ variables:
 test:
   stage: test
   allow_failure: true
+  tags: 
+    - toto
  
 # Run the tests  
   script:
