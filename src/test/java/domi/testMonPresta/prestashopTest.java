@@ -59,25 +59,26 @@ public class prestashopTest {
 	@BeforeEach
 	public void setUp() throws Exception {
 
-//		String navigateur = System.getenv("navigateur");
-//		if (navigateur == "chrome")
-//		{
-//			System.setProperty("webdriver.firefox.driver", "firefoxdriver");
-//			driver = new FirefoxDriver();
-//			
-//			driver= new EdgeDriver();
+		String navigateur = System.getenv("navigateur");
+		if (navigateur == "chrome")
+		{
+			System.setProperty("webdriver.firefox.driver", "firefoxdriver");
+			driver = new FirefoxDriver();
+			
+			driver= new EdgeDriver();
+
+		}
+		else
+		{
+			System.setProperty("webdriver.firefox.driver", "firefoxdriver");
+			driver = new FirefoxDriver();
+		}
+//        WebDriverManager.chromedriver().setup();
+//        ChromeOptions options=new ChromeOptions();
 //
-//		}
-//		else
-//		{
-//			System.setProperty("webdriver.firefox.driver", "firefoxdriver");
-//			driver = new FirefoxDriver();
-//		}
-        WebDriverManager.chromedriver().setup();
-        ChromeOptions options=new ChromeOptions();
-        options.addArguments("--headless=new");
-        options.addArguments("window-size=1920,1200");
-        driver=new ChromeDriver(options);
+//        options.addArguments("headless=new");
+//        options.addArguments("window-size=1920,1200");
+//        driver=new ChromeDriver(options);
 //        driver.get("https://opensource-demo.orangehrmlive.com/");
  
 
