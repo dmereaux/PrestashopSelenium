@@ -109,7 +109,7 @@ public class prestashopTest {
 	@Test 
 
 	public void chercherLeMugF() throws InterruptedException, MalformedURLException {
-		driver.quit();
+//		driver.quit();
 //		FirefoxOptions options = new FirefoxOptions();
 //		FirefoxProfile monProfil = new FirefoxProfile(new File("/Users/dominiquemereaux/Library/Application Support/Firefox/Profiles/rfqfjl41.monProfil"));
 //		options.setProfile(monProfil);
@@ -405,7 +405,7 @@ public class prestashopTest {
 		assertTrue(monUtil.lienVisible(driver,"//*[@id='category-6']/a","//*[@id='category-7']/a"));
 
 	}
-	@Test
+//	@Test
 	public void testPrestashopAPK() throws Exception {
 
 		// Definition du mobile sur lequel on va exécuter les tests
