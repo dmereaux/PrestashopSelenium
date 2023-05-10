@@ -132,9 +132,9 @@ public class prestashopTest {
 		driver.get("http://prestashop.qualifiez.fr/en/");
 		driver.manage().window().setSize(new Dimension(968, 699));
 		driver.manage().window().maximize();
-		File monFichier = driver.findElement(By.name("s")).getScreenshotAs(OutputType.FILE);
-	    File toto = new File("toto.png");
-	    FileUtils.copyFile(monFichier,toto);
+//		File monFichier = driver.findElement(By.name("s")).getScreenshotAs(OutputType.FILE);
+//	    File toto = new File("toto.png");
+//	    FileUtils.copyFile(monFichier,toto);
 
 		driver.findElement(By.name("s")).sendKeys("MUG");
 		driver.findElement(By.name("s")).sendKeys(Keys.ENTER);
