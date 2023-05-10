@@ -18,9 +18,8 @@ test:
     - mvn compile test
  
 # Store artifacts
+ 
   artifacts:
     when: always
-    name: "report"
-    paths:
-    - target/surefire-reports/*
-    expire_in: 1 h
+    reports:
+      junit: target/**/TEST-*.xml
