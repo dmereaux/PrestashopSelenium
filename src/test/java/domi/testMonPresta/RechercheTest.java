@@ -39,7 +39,7 @@ public class RechercheTest {
 		// creation du driver
 			System.setProperty("webdriver.gecko.driver", "geckodriver");
 		    driver = new FirefoxDriver();
-		    baseUrl = " http://prestashop.qualifiez.fr/en/";
+		    baseUrl = " http://prestashop.qualifiez.fr";
 
 
 //		    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

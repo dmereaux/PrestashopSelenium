@@ -116,7 +116,7 @@ public class prestashopTest {
 //		driver = new FirefoxDriver(options);
 
 
-		driver.get("http://prestashop.qualifiez.fr/en/");
+		driver.get("http://prestashop.qualifiez.fr/");
 		driver.manage().window().setSize(new Dimension(968, 699));
 		driver.manage().window().maximize();
 		driver.findElement(By.name("s")).sendKeys("MUG");
@@ -129,7 +129,7 @@ public class prestashopTest {
 		//	WebDriver driver = new RemoteWebDriver(new URL("http://192.168.1.79:4444"), firefoxOptions);
 
 
-		driver.get("http://prestashop.qualifiez.fr/en/");
+		driver.get("http://prestashop.qualifiez.fr/");
 		driver.manage().window().setSize(new Dimension(968, 699));
 		driver.manage().window().maximize();
 //		File monFichier = driver.findElement(By.name("s")).getScreenshotAs(OutputType.FILE);
@@ -164,7 +164,7 @@ public class prestashopTest {
 	}
 	@Test 
 	public void checkerLaBOX() throws InterruptedException {
-		driver.get("http://prestashop.qualifiez.fr/en/men/1-1-hummingbird-printed-t-shirt.html#/1-size-s/8-color-white");
+		driver.get("http://www.qualifiez.fr/monPrestashop2/prestashop/index.php?id_product=1&id_product_attribute=1&rewrite=hummingbird-printed-t-shirt&controller=product#/1-taille-s/8-couleur-blanc");
 		WebElement check1 = driver.findElement(By.xpath("//*[@id='group_2']/li[1]/label/input"));
 		monUtil=new Util();
 		monUtil.checkLaBox(check1);
@@ -231,11 +231,11 @@ public class prestashopTest {
 
 		// Création d'un remote driver pour se connecter au serveur APPIUM
 		RemoteWebDriver driver = new RemoteWebDriver(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-		driver.get("http://prestashop.qualifiez.fr/en/");
+		driver.get("http://prestashop.qualifiez.fr/");
 
 		driver.findElement(By.name("s")).sendKeys("MUG");
-		driver.findElement(By.cssSelector("#search_widget > form > button > i")).click();
-		assertEquals(driver.getTitle(),"Search");	   
+		driver.findElement(By.name("s")).sendKeys(Keys.ENTER);
+		assertEquals(driver.getTitle(),"Rechercher");	   
 	}
 
 	@Test
@@ -265,13 +265,13 @@ public class prestashopTest {
 
 	@Test
 	public void testActions() throws Exception {
-		driver.get("http://prestashop.qualifiez.fr/en/");
+		driver.get("http://prestashop.qualifiez.fr/");
 		driver.manage().window().maximize();
 		Actions builder = new Actions(driver);
 		Action mouseOverClothes = builder.moveToElement(driver.findElement(By.cssSelector("#category-3 > a:nth-child(1)"))).build();
 		mouseOverClothes.perform();
 
-		driver.findElement(By.partialLinkText("WOMEN")).click();
+		driver.findElement(By.partialLinkText("FEMME")).click();
 
 
 	} 
@@ -279,7 +279,7 @@ public class prestashopTest {
 	// Faire une copie ecran.
 	public void testPrestashopCopie() throws Exception {
 		driver.manage().window().setSize(new Dimension(1050, 840));
-		driver.get("http://prestashop.qualifiez.fr/en/");
+		driver.get("http://prestashop.qualifiez.fr/");
 		// creation objet pour faire des copies ecran
 		TakesScreenshot scrShot =((TakesScreenshot)driver);
 		// copie ecran, resultat dans un objet de type FILE
@@ -294,20 +294,20 @@ public class prestashopTest {
 	// exemple javascript
 	public void testPrestashop5() throws Exception {
 		// Aller sur la page prestashop
-		driver.get("http://prestashop.qualifiez.fr/en/");
+		driver.get("http://prestashop.qualifiez.fr/");
 		// saisir le champ de recherche
 		driver.findElement(By.name("s")).sendKeys("MUG");
 		// cliquer sur le bouton de recherche
-		driver.findElement(By.cssSelector("button > .search")).click();  
+		driver.findElement(By.name("s")).sendKeys(Keys.ENTER);
 		// attendre et contrôler le résultat
 		Thread.sleep(5000);
-		assertEquals(driver.findElement(By.cssSelector(".total-products > p")).getText(),"There are 5 products.");
+		assertEquals(driver.findElement(By.cssSelector(".total-products > p")).getText(),"Il y a 5 produits");
 	}
 	@Test
 	// exemple javascript
 	public void testPrestashopAttente() throws Exception {
 		// Aller sur la page prestashop
-		driver.get("http://prestashop.qualifiez.fr/en/");
+		driver.get("http://prestashop.qualifiez.fr/");
 		// saisir le champ de recherche
 		driver.findElement(By.name("s")).sendKeys("MUG");
 		// cliquer sur le bouton de recherche
@@ -324,7 +324,7 @@ public class prestashopTest {
 	public void testPrestashop6() throws Exception {
 
 		// Aller sur la page prestashop
-		driver.get("http://prestashop.qualifiez.fr/en/");	  
+		driver.get("http://prestashop.qualifiez.fr/");	  
 		// saisir le champ de recherche
 		driver.findElement(By.name("s")).sendKeys("Mug");
 		// cliquer sur le bouton de recherche
@@ -339,7 +339,7 @@ public class prestashopTest {
 	public void testPrestashopCurrency() throws Exception {
 
 		// Aller sur la page prestashop
-		driver.get("http://prestashop.qualifiez.fr/en/");
+		driver.get("http://prestashop.qualifiez.fr/");
 
 		// recuperer les liens a vers des devises
 		List<WebElement> list = driver.findElements(By.xpath("//*[@id='_desktop_currency_selector']/div/ul//a"));
@@ -356,7 +356,7 @@ public class prestashopTest {
 	// exemple javascript
 	public void testJavascript() throws Exception {
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-		driver.get("http://prestashop.qualifiez.fr/en/");
+		driver.get("http://prestashop.qualifiez.fr/");
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		// saisie de MUG
 		js1.executeScript("document.getElementsByName('s')[0].value='MUG';");
@@ -398,7 +398,7 @@ public class prestashopTest {
 		Util monUtil = new Util();
 
 		// demarage du test
-		driver.get("http://prestashop.qualifiez.fr/en/");
+		driver.get("http://prestashop.qualifiez.fr/");
 
 		assertTrue(monUtil.lienVisible(driver,"//*[@id='category-3']/a","//*[@id='category-4']/a"));
 		assertTrue(monUtil.lienVisible(driver,"//*[@id='category-3']/a","//*[@id='category-5']/a"));

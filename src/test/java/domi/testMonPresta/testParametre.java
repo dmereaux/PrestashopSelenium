@@ -65,7 +65,7 @@ public class testParametre{
   public void setUp() throws Exception {
 	System.setProperty("webdriver.gecko.driver", "geckodriver");
     driver = new FirefoxDriver();
-    driver.get("http://prestashop.qualifiez.fr/en/");
+    driver.get("http://prestashop.qualifiez.fr");
   }
   
   @ParameterizedTest
